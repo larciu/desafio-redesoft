@@ -1,0 +1,120 @@
+<!DOCTYPE html<html>
+<head>
+	<title>Promoções</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css\styles.css">
+	<style>
+	body{
+		background-color: #f5f5f5;
+	}
+</style>
+</head>
+<body>
+	<div class="branco"> 
+		<table class="table table-borderless">
+			<thead>
+				<th colspan="2" class="text-center h3 thead">Promoções</th>
+			</thead>
+		</table>
+		<div class="table-responsive tabela">
+			<table class="table define table-borderless">
+				<tbody>
+					<tr>
+						<td><img src="img/viagem.jpg" class="rounded img-pontos"></td>
+						<td><img src="img/eletronicos.jpg" class="rounded img-pontos" ></td>
+					</tr>
+
+					<tr>
+						<td><b>Viagens</b><br>
+							Pacotes e companhias aéreas
+						</td>
+
+						<td><b>Eletrônicos</b><br>
+							Lojas e sites com desconto nos seus produtos e serviços</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="branco">			
+			<table class="table tabela table-borderless define">
+				<thead>
+					<th colspan="3" class="h3 thead">Empresas parceiras</th>
+				</thead>
+			</table>
+			<div class="tabela table-responsive">
+				<table class="table table-borderless define" >
+					<tbody>
+						<tr>
+							<td><img src="img/gol.jpg" class="rounded img-parceiros"></td>
+							<td><img src="img/localiza.png" class="rounded img-parceiros"></td>
+							<td><img src="img/spoleto.png" class="rounded img-parceiros"></td>
+						</tr>
+						<tr>
+							<td><img src="img/shell.jpg" class="rounded img-parceiros"></td>
+							<td><img src="img/latam.jpg" class="rounded img-parceiros"></td>
+							<td><img src="img/mobly.png" class="rounded img-parceiros"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<footer> 
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="nav-buttons">
+							<ul class="nav navbar navbar-default">
+								<li class="navbar-item">
+									<figure>
+										<a href="index.html">
+											<img class="navbar-link" src="img/Icon home.svg">
+										home</a>
+									</figure>
+								</li>
+								<li class="navbar-item">
+									<figure>
+										<a href="promocoes.html">
+											<img class="navbar-link" src="img/Icon promocoes.svg">
+										Promoções</a>
+									</figure>
+
+								</li>
+								<li class="navbar-item">
+									<figure>
+										<a href="#">
+											<img class="navbar-link" src="img/Icon postos.svg">
+										Postos</a>
+									</figure>
+								</li>
+								<li class="navbar-item">
+									<figure>
+										<a href="#">
+											<img class="navbar-link" src="img/Icon extrato.svg">
+										Extratos</a>
+									</figure>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js\scripts.js"></script>
+	<script>
+		$(function(){
+			var numero = setTimeout(interval,2000);			
+		});
+
+		function interval(){
+			$('.img-parceiros').toggleClass('img-all-promocoes');
+			$('.img-pontos').toggleClass('img-all-promocoes');
+			var numero = setTimeout(interval,2000);
+		}
+	</script>	
+
+	</body>
+	</html>

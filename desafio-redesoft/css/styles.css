@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=El+Messiri|Philosopher');
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.image-menu{
+	cursor: pointer;
+	width: 30px;
+}
+#close{
+	width: 26px;
+}
+.button-menu{
+	background: none;
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.img-home{
+	width: 100%;
+}
+.img-bg-home{
+	width: 100%;
+	height: 102px;
+}
+.nav-menu{
+	position: absolute;
+	z-index: 1;
+	transition: 0.5s;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.nav-menu .img-redesoft{
+	float: right;
+}
+
+.fontes{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	margin: auto;  
+	color: #FFF;
+	font-size: 32px;
+	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	text-transform: uppercase;
+	transform: perspective(7.5cm) rotateX(6deg) rotateY(0deg);
+}
+
+.fontes-msg{
+	position: absolute;
+	top: -101px;
+	color: #FFF;
+	font-size: 20px;
+	font-family: 'Philosopher', sans-serif; 
+}
+
+.btn-pague{
+	font-weight: bold;
+	background-color: #505153;
+	color: #FFF;
+}
+
+.pagamento{
+	color: #808080;
+	text-align: center;
+}
+
+.pagamento .pagar{
+	color: #ebac00;
+	text-decoration: underline;
+}
+
+.pagamento p{
+	margin-bottom: 0;
+}
+
+.nav-buttons li a{
+	color: #808080;
+}
+.img-parceiros{
+	width: 200px;
+	height: 200px;
+	transition: 2s;
+}
+.img-pontos{
+	width: 250px;
+	height: 200px;
+	transition: 2s;
+}
+.tabela{
+	margin-bottom: 15px;
+	border: none;
+	background-color: #fff;
+	width: 90%;
+	margin: 0 auto;
+}
+.table tbody tr td{
+	border:none;
+}
+.table thead th{
+	border:none;
+}
+.table tbody th{
+	border:none;
+}
+.thead{
+	font-size: 25px;
+	color: #808080;		
+}
+.img-all-promocoes{
+	transform: scale(1.1);	
+}
+.branco{
+	background-color: #FFF;
+	margin-bottom: 25px;
+}
+b{
+	font-size: 18px;
+	color: #808080;
+}
+.define{
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;  
+}
+#app-navbar-collapse{
+	position: absolute;
+	background-color: #FFF;
+	z-index: 999;
+	top: -188%; /* 25% from the top */
+	margin-top: 30px;
+	left: -1%;
+	opacity: 0.98;
+	box-shadow: 5px 4px rgba(0,0,0,0.1);
+}
+#app-navbar-collapse ul{
+	list-style: none;
+}
+
+#app-navbar-collapse li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block; /* Display block instead of inline */
+	transition: 0.3s;
+}
+
+#app-navbar-collapse li #nome{
+	display: inline-block;
+	padding-left: 5px; 
+}
+
+#app-navbar-collapse #first, #app-navbar-collapse #last{
+	border: none;
+}
+
+#app-navbar-collapse li{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-left: -40px;
+} 
+
+#home{
+	color: #ebac00;
+}
+#nome{
+	font-weight: bold;
+}
+
+footer{
+	position: absolute;
+	width: 100%;
+}
+
+@media(min-width: 640px){
+	.row .fontes{
+		top: 50px;
+	}
+}
+@media(min-width:768px){
+	.row .fontes{
+		font-size: 200%;
+		left: 0;
+		width: 80%;
+	}
+	.img-home{
+		height: auto;
+	}
+
+	.fontes-msg{
+		text-align: center;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.btn-pague{
+		margin-top: 25px;
+		width: 50%;
+		height: 100px;
+	}
+
+	.pagamento{
+		margin-top: 25px;
+	}
+
+	#app-navbar-collapse{
+		width: 50%;
+	}
+
+	#app-navbar-collapse li{
+		font-size: 21px;
+		padding: 15px;
+	}
+}
+
+@media(max-width: 767px){
+	.fontes{
+		width: 80%;
+		left: -1px;
+	}
+	.img-home{
+		height: 250px;
+	}
+	.fontes-msg{
+		left: 30px;
+	}
+	.btn-pague{
+		position: absolute;
+		top: 25px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 70%;
+		height: 50px;
+	}
+
+	.pagamento{
+		margin-top: 86px;
+	}
+
+	.nav-buttons ul{
+		margin: 0 auto;
+		margin-top: 15px;
+		width: 100%; 
+	}
+
+	.nav-buttons li a{
+		font-size: 13px;
+	}
+
+	.nav-buttons img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#app-navbar-collapse{
+		width: 120%;
+	}
+
+	#app-navbar-collapse li{
+		padding: 12px;
+	}
+}
+
+@media(min-width: 1024px){
+	.row .fontes{
+		font-size: 50px;
+		left: 0;
+		width: 60%;
+	}
+}
+
+@media(min-height: 1024px){
+	footer{
+		bottom: 0;
+	}
+}
